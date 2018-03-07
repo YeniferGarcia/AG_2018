@@ -1,0 +1,3 @@
+/home/yeni/Documentos/opengl/build/CMakeFiles/rebuild_cache.dir
+/home/yeni/Documentos/opengl/build/CMakeFiles/edit_cache.dir
+/home/yeni/Documentos/opengl/build/CMakeFiles/hello.dir
