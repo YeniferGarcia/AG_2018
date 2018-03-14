@@ -3,13 +3,12 @@
 void display(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glPointSize(10);
-    glBegin(GL_POINTS);
-    glColor3f(0.0f,1.0f,1.0f);	
-    glVertex3f(0.5f,0.5f,0.0f);
-    glVertex3f(-0.5f,-0.5f,0.0f);
-    glVertex3f(-0.5f,0.5f,0.0f);
-    glVertex3f(0.5f,-0.5f,0.0f);
+    glPointSize(1);
+    glBegin(GL_LINES);
+  
+    glVertex3f(-9.0f,9.0f,0.0f);
+    glVertex3f(9.0f,9.0f,0.0f);
+    
     glEnd();
     glFlush ();
 
@@ -18,7 +17,7 @@ void init (void)
 {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, -1.0);
+    glOrtho(-10, 10.0, -10.0, 10.0, -10.0, -10.0);
 }
 
 int main(int argc, char** argv)
